@@ -1,0 +1,145 @@
+@import "./config.scss";
+@import './function.scss';
+@import '../common/var.scss';
+
+// 伪元素
+
+@mixin pseudo($selector) {
+  @at-root {
+    #{&+":"+$selector} {
+      @content;
+    }
+  }
+}
+
+@mixin extend-rule($name) {
+  @warn(#{'%shared-' + $name});
+}
+
+// 状态给父节点添加某个类，即某种状态
+@mixin when($status) {
+  @at-root {
+    &.#{$state-prefix + $status} {
+      @content;
+    }
+  }
+}
+
+// 滚动条样式
+@mixin scrollBar {
+  &::-webkit-scrollbar {
+    width: 6px;
+
+    &:horizontal {
+      width: 6px;
+    }
+
+    &-thumb {
+      border-radius: 5px;
+      width: 6px;
+      background: $-color-colorless--6;
+    }
+
+    &-corner {
+      background: $-color-colorless--1;
+    }
+
+    &-track {
+      background: $-color-colorless--1;
+    }
+
+    &-piece {
+      width: 6px;
+      background: $-color-colorless--1;
+    }
+  }
+}
+
+@mixin res($key, $map: $breakPoints) {
+  @if map-has-key($map, $key) {
+    @media screen and #{inspect(map-get($map,$key))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "undefined points `#{$map}`";
+  }
+}
+
+// placeholder
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+
+  ;
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// BEM实现
+// 块
+@mixin b($block) {
+  $B: $block !global;
+
+  .#{$B} {
+    @content
+  }
+}
+
+;
+
+// 元素
+@mixin e($element) {
+  $selector: &;
+  $currentSelector: '';
+
+  @each $unit in $element {
+    $currentSelector: $currentSelector + '.'+ $B + $element-separator + $unit + ','
+  }
+
+  ;
+
+  @if isOk($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  }
+
+  @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
+    }
+  }
+}
+
+// 修饰符
+
+@mixin m($selector) {
+  $selector: inspect($selector);
+  $currentSelector: '';
+
+  @each $unit in $selector {
+    $currentSelector: $currentSelector + & + $modifier-separator + $unit + ','
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+
+}

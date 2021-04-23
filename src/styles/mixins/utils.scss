@@ -1,0 +1,49 @@
+// 垂直居中
+@mixin utils-vertical-middle {
+  $selector: &;
+
+  & * {
+    vertical-align: middle;
+  }
+
+  @at-root {
+    #{$selector}::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+}
+
+// 清除浮动
+@mixin utils-clearfix {
+  $selector: &;
+
+  @at-root {
+
+    #{$selector}::after,
+    #{$selector}::before {
+      display: table;
+      content: ''
+    }
+
+    #{$selector}::after {
+      clear: both;
+    }
+  }
+}
+
+// 超过打省略号
+@mixin utils-ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 是否允许选中
+@mixin utils-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+}

@@ -3,6 +3,7 @@ const cleanCss = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
 const autoprefixer = require('gulp-autoprefixer')
+const components = require('../components.json')
 
 // 构建统一的样式文件
 function createCss (cb) {
@@ -15,4 +16,16 @@ function createCss (cb) {
   cb()
 }
 
-exports.default = gulp.series(createCss)
+function buildSeperateCss (cb) {
+  Object.keys(components).forEach(comName => {
+    gulp.src(`../src/styles/${comName}.scss`)
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cleanCss())
+    .pipe(rename(`${comName}.css`))
+    .pipe(gulp.dest('../lib/styles'))
+  cb()
+  })
+}
+
+exports.default = gulp.series(createCss, buildSeperateCss)
