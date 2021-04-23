@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", 
+      {
+        "loose": true,
+        "spec": false,
+        "modules": "commonjs",
+        "useBuiltIns": "usage",
+        "corejs": "2.6.9"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
+}

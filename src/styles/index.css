@@ -1,0 +1,8 @@
+body {
+  background: white;
+}
+
+body .test-class {
+  background: red;
+  display: flex;
+}

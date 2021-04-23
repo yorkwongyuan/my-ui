@@ -1,0 +1,46 @@
+{
+  "name": "my-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build:style": "gulp --gulpfile build/gen-style.js",
+    "build:prod": "webpack --config build/webpack.prod.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
+    "deploy:build": "npm run docs:build && npm run deploy"
+  },
+  "keywords": [],
+  "author": "wy <631824375@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "vuepress": "^1.8.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.3.7",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "less-loader": "^8.1.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.6"
+  }
+}
