@@ -11,9 +11,9 @@ module.exports = merge(webpackConfig, {
   },
   output: {
     path: path.resolve(__dirname, '../lib'),
-    filename: 'my-ui.min.js',
+    filename: 'mwp-ui.min.js',
     publicPath: '/lib/',
-    library: 'my-ui',
+    library: 'mwp-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

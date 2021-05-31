@@ -87,7 +87,7 @@
 // BEM实现
 // 块
 @mixin b($block) {
-  $B: $block !global;
+  $B: $namespace + '-' +$block !global;
 
   .#{$B} {
     @content

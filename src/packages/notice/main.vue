@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(item, index) in lists">
+    <div v-for="(item, index) in lists" :key="index">
       <div>{{item.title}}</div>
       <div>{{item.content}}</div>
     </div>
@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'notice',
+  name: 'Notice',
   data () {
     return {
       lists: []

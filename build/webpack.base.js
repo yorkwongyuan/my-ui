@@ -7,106 +7,76 @@ function resolve (_path) {
   return join(__dirname, '..', _path)
 }
 module.exports = {
-  rules: [{
-    test: /\.vue$/,
-    loader: 'vue-loader',
-    options: {
-      loaders: {
-        css: [
-          'vue-style-loader', 
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
-          }
-        ],
-        less: [
-          'vue-style-loader', 
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true
-            }
-          }
-        ]
-      },
-      postLoaders: {
-        html: 'babel-loader?sourceMap'
-      },
-      sourceMap: true
-    }
-  }, {
-    test: /\.js$/,
-    loader: 'babel-loader',
-    options: {
-      sourceMap: true
-    },
-    exclude: /node_modules/
-  }, {
-    test: /\.css$/,
-    loaders: [
-      {
-        loader: 'style-loader',
-        options: {
-          sourceMap: true
-        }
-      },
-      {
-        loader: 'css-loader',
-        options: {
-          sourceMap: true
-        }
-      }
-    ]
-  },{
-    test: /\.less$/,
-    loaders: [{
-      loader: 'style-loader',
+  module: {
+    rules: [{
+      test: /\.vue$/,
+      loader: 'vue-loader',
       options: {
-        sourceMap: true
-      }
-    },
-    {
-      loader: 'css-loader',
-      options: {
+        loaders: {
+          css: [
+            'vue-style-loader', 
+            {
+              loader: 'css-loader'
+            }
+          ],
+          less: [
+            'vue-style-loader', 
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'less-loader'
+            }
+          ]
+        },
+        postLoaders: {
+          html: 'babel-loader?sourceMap'
+        },
         sourceMap: true
       }
     }, {
-      loader: 'less-loader',
-      options: {
-        sourceMap: true
-      }
-    }]
-  },{
-    test: /\.scss$/,
-    loaders: [{
-      loader: 'style-loader',
-      options: {
-        sourceMap: true
-      }
-    },
-    {
-      loader: 'css-loader',
-      options: {
-        sourceMap: true
-      }
+      test: /\.js$/,
+      loader: 'babel-loader',
+      exclude: /node_modules/
     }, {
-      loader: 'sass-loader',
+      test: /\.css$/,
+      loaders: [
+        {
+          loader: 'style-loader'
+        },
+        {
+          loader: 'css-loader'
+        }
+      ]
+    },{
+      test: /\.less$/,
+      loaders: [{
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      }, {
+        loader: 'less-loader'
+      }]
+    },{
+      test: /\.scss$/,
+      loaders: [{
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      }, {
+        loader: 'sass-loader'
+      }]
+    },{
+      test: /\.(png|jpeg|jpg|gif)$/,
+      loader: 'url-loader',
       options: {
-        sourceMap: true
+        limit: 8192,
+        name: 'imgs/[hash:7].[ext]'
       }
     }]
-  },{
-    test: /\.(png|jpeg|jpg|gif)\??.*$/,
-    loader: 'url-loader?limit=8192'
-  }],
+  },
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {

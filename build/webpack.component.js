@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const components = require('../components.json')
+const components = require('./components.json')
 const merge = require('webpack-merge')
 const webpackBaseConfig = require('./webpack.base')
 let entries = {}

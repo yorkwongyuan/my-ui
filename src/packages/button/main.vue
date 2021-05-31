@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <button class="haha">
+    <button class="mwp-button" :class="[`mwp-button--${type}`,`mwp-button--${size}`]" @click="$emit('click')">
       <slot></slot>
     </button>
-  </div>
 </template>
 <script>
 import { oneOf } from '../../utils/assist'
@@ -12,10 +10,17 @@ export default {
   props: {
     type: {
       validator (value) {
-        return oneOf(value, ['default', 'primary', 'info', 'success'])
+        return oneOf(value, ['default', 'primary', 'info', 'success', 'sub', 'normal'])
       },
       type: String,
       default: 'default'
+    },
+    size: {
+      validator (value) {
+        return oneOf(value, ['large', 'medium', 'small'])
+      },
+      type: String,
+      default: 'medium'
     }
   }
 }

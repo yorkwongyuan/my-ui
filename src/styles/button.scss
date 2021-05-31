@@ -1,8 +1,31 @@
-// @import "mixins/mixin";
-// @include b(button) {
-//   height: 36px;
-//   background-color: blue;
-// }
-.button {
+@import "mixins/mixin.scss";
+@include b(button) {
   height: 36px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  @include m(primary) {
+    background-color: $--color-primary;
+    color: $--color-white;
+  }
+  @include m(sub) {
+    background-color: $--color-white;
+    color: $--color-primary;
+    border:1px solid $--color-primary;
+  }
+  @include m(normal) {
+    background-color: $--color-white;
+    color: $--color-gray;
+    border:1px solid $--color-light-border;
+  }
+
+  @include m(medium) {
+    padding: 5px 16px;
+  }
+  @include m(large) {
+  }
+  @include m(small) {
+    padding: 1px 8px;
+  }
 }

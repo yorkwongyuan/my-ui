@@ -1,13 +1,16 @@
 {
-  "name": "my-ui",
-  "version": "1.0.0",
+  "name": "mwp-ui",
+  "version": "1.0.15",
   "description": "",
-  "main": "index.js",
+  "main": "lib/mwp-ui.min.js",
   "directories": {
     "doc": "docs",
     "lib": "lib",
     "test": "test"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build:style": "gulp --gulpfile build/gen-style.js",
     "build:prod": "webpack --config build/webpack.prod.js",
@@ -36,11 +39,13 @@
     "chai": "^4.2.0",
     "cross-env": "^5.2.0",
     "css-loader": "2.1.1",
+    "eslint": "^7.27.0",
     "file-loader": "^4.2.0",
     "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-px2rem-plugin": "^0.4.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "karma": "^4.2.0",
@@ -55,7 +60,9 @@
     "less": "^3.10.2",
     "less-loader": "^5.0.0",
     "mocha": "^6.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^5.3.0",
+    "px2rem-loader": "^0.1.9",
     "rimraf": "^3.0.0",
     "sass-loader": "^7.3.1",
     "sinon": "^7.4.1",
@@ -64,6 +71,6 @@
     "url-loader": "^2.1.0",
     "vue-loader": "^15.7.1",
     "vue-style-loader": "^4.1.2",
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.8.2"
   }
 }

@@ -12,7 +12,9 @@ function broadcast (componentName, eventName, params) {
 export default {
   methods: {
     dispatch(componentName, eventName, params) {
+      console.log('hahaha')
       let parent = this.$parent || this.$root
+      console.log('dispatch -> parent', parent)
       let name = parent.$options.name
       while(parent && (!name || name !== componentName)) {
         parent = parent.$parent
