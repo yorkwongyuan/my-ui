@@ -1,3 +1,4 @@
+@import "./color.scss";
 $--color-primary: #2F54EB !default;
 $--color-white: #FFFFFF !default;
 $--color-gray: #555555 !default;
@@ -8,3 +9,22 @@ $--color-danger: #F56C6C !default;
 $--color-gray-1: #DDDDDD !default;
 
 $--color-text: #555555 !default;
+// 状态色
+$--color-status-blue:$-color-geekBlue--6;
+$--color-status-green:$-color-lifeGreen--6;
+$--color-status-red:$-color-fightingRed--6;
+$--color-status-gray:$-color-colorless--6;
+$--color-status-heavy-gray:$-color-colorless--7;
+
+// 常用色
+$--color-black: $-color-colorless--10;
+$--color-white: $-color-colorless--1;
+$--color-success: $-color-lifeGreen--6;
+$--color-less: $-color-fightingRed--6;
+$--color-gray:$-color-colorless--7;
+$--color-gray-1: $-color-colorless--5;
+$--color-yellow-1:$-color-vitalityYellow--6;
+$--color-text: $-color-colorless--8;
+$--background-color: $-color-colorless--2;
+$--border-color:$-color-colorless--4;
+$--border-light-color:$-color-colorless--3;

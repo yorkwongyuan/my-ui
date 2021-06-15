@@ -1,0 +1,161 @@
+@import "mixins/mixin.scss";
+@include b(member-card) {
+  box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding: 14px;
+    padding-bottom: 0px;
+    padding-right: 0;
+    border: 1px solid $--border-light-color;
+    cursor: pointer;
+    &:not(:last-child) {
+      .member-card__famous--right:after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        border-bottom: 1px solid #e6e6e6;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scaleY(0.5);
+      }
+    }
+    @include m(speciality) {
+      font-size: 12px;
+      line-height: 17px;
+      color: $--color-gray;
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+      -webkit-line-clamp: 2;
+    }
+    @include m(content) {
+      padding: 6px 0;
+      background-color: white;
+      border-radius: 6px;
+    }
+    @include e(left) {
+      margin-right: 15px;
+    }
+    @include e(photo-wrap) {
+      position: relative;
+    }
+    @include e(right) {
+      flex: 1;
+      padding-bottom: 14px;
+      padding-right: 16px;
+      position: relative;
+      overflow: hidden;
+      &:after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        transform: scaleY(0.5);
+        // background-color: $--border-light-color;
+        left:0;
+        right:0;
+        bottom: 0;
+      }
+      @include m(top) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .left-part {
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+      }
+      @include m(title) {
+        display: inline-block;
+        flex:1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #222222;
+        line-height: 20px;
+      }
+      @include m(middle) {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      @include m(hospital) {
+        width: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 10px;
+        word-break: keep-all;
+        white-space:nowrap;
+        @extend .gray-font;
+      }
+      @include m(org) {
+        flex:1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @extend .gray-font;
+      }
+    }
+    @include e(photo) {
+      width: 42px;
+      height: 42px;
+      border-radius: 21px;
+      border: 1px solid #e5e5e5;
+      object-fit: cover;
+    }
+    @include m(verify) {
+      width: 15px;
+      height: 15px;
+    }
+    @include e(tag) {
+      border-radius: 2px;
+      padding: 0 4px;
+      display: inline-block;
+      background-color: #ff632f;
+      height: 16px;
+      line-height: 16px;
+      color: white;
+      font-size: 11px;
+    }
+    @include m(icon) {
+      display: inline-block;
+      width: 30px;
+      height: 16px;
+      background: #ff632f;
+      border-radius: 2px;
+      color: white;
+      padding: 2px 4px;
+    }
+    .gray-font {
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: $--color-text;
+      line-height: 20px;
+    }
+    @include m(num) {
+      display: inline-block;
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: $--color-gray;
+      line-height: 17px;
+    }
+}

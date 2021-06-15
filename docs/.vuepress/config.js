@@ -24,7 +24,8 @@ module.exports = {
         children: [
           'component/basic/button',
           'component/basic/notice',
-          'component/basic/photo'
+          'component/basic/photo',
+          'component/basic/member-card'
         ]
       },
       {
