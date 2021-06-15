@@ -23,11 +23,15 @@ export default {
     height: 100%;
     border: none;
   }
-  width: 250px;
-  height: 500px;
+  // width: 250px;
+  // height: 500px;
+  // width: 375px;
+  // height: 667px;
+  width: fit-content;
+  height: fit-content;
   background: #2E2E2E;
   border: 10px solid #3B3B3B;
-  margin: 100px auto;
+  // margin: 100px auto;
   border-radius: 40px;
 }
 #sxt{
@@ -49,8 +53,10 @@ export default {
 }
 
 #screen{
-  width: 230px;
-  height: 390px;
+  // width: 230px;
+  // height: 390px;
+  width: 375px;
+  height: 667px;
   background: #0A0A0A;
   border: 3px solid #1C1C1C;
   margin: 10px auto;

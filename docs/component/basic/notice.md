@@ -15,6 +15,7 @@ export default {
   },
   methods: {
     onNotice() {
+      console.log('123123')
       this.$notice({
         title: '提示',
         content: this.content || '内容',

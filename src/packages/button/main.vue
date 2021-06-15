@@ -9,11 +9,11 @@ export default {
   name: 'Button',
   props: {
     type: {
-      validator (value) {
-        return oneOf(value, ['default', 'primary', 'info', 'success', 'sub', 'normal'])
-      },
+      // validator (value) {
+      //   return oneOf(value, ['default', 'primary', 'info', 'success', 'sub', 'normal'])
+      // },
       type: String,
-      default: 'default'
+      default: 'primary'
     },
     size: {
       validator (value) {

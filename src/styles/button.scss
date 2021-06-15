@@ -1,12 +1,12 @@
 @import "mixins/mixin.scss";
 @include b(button) {
-  height: 36px;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   @include m(primary) {
     background-color: $--color-primary;
+    border:1px solid $--color-primary;
     color: $--color-white;
   }
   @include m(sub) {
@@ -14,16 +14,28 @@
     color: $--color-primary;
     border:1px solid $--color-primary;
   }
+  @include m(danger) {
+    background-color: $--color-white;
+    color: $--color-danger;
+    border:1px solid $--color-danger;
+  }
   @include m(normal) {
     background-color: $--color-white;
-    color: $--color-gray;
-    border:1px solid $--color-light-border;
+    color: $--color-text;
+    border:1px solid $--color-gray-1;
+  }
+  @include m(link) {
+    background-color: $--color-white;
+    color: $--color-primary;
+    border: none;
+    font-size: 14px;
   }
 
   @include m(medium) {
     padding: 5px 16px;
   }
   @include m(large) {
+    padding: 12px 16px;
   }
   @include m(small) {
     padding: 1px 8px;
