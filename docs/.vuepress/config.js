@@ -23,16 +23,16 @@ module.exports = {
         collapsable: true,
         children: [
           'component/basic/button',
-          'component/basic/notice',
           'component/basic/photo',
-          'component/basic/member-card'
+          'component/basic/member-card',
+          'component/basic/status-card'
         ]
       },
       {
         title: '业务组件',
         collapsable: true,
         children: [
-          'component/biz/button'
+          'component/biz/patient-card'
         ]
       }
     ]

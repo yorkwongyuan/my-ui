@@ -7,7 +7,7 @@
         class="mwp-photo__photo"
       />
     </div>
-    <div class="mwp-photo__photo-wrap" v-else-if="['patient', 'doctor', 'volunteer'].includes(type) && ['M', 'F'].includes(gender)">
+    <div class="mwp-photo__photo-wrap" v-else-if="['patient', 'doctor', 'volunteer'].includes(type) && ['M', 'F', 'T'].includes(gender)">
       <img
       :src="require(`./imgs/${type}-${gender}.png`)"
       alt
@@ -30,9 +30,9 @@ export default {
     },
     gender: {
       type: String,
-      default: () => 'M',
+      default: () => '',
       validator (value) {
-        return oneOf(value, ['M', 'F'])
+        return oneOf(value, ['M', 'F', 'T'])
       },
     },
     src: {

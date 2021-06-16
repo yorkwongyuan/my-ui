@@ -4,7 +4,7 @@
     @click="click"
   >
     <div class="mwp-member-card__left">
-      <Photo />
+      <Photo :type="type" :gender="gender"/>
     </div>
     <div class="mwp-member-card__right">
       <div class="mwp-member-card__right--top">
@@ -32,11 +32,18 @@ export default {
     isDoctor: {
       type: Boolean,
       default: () => true
+    },
+    type: {
+      type: String,
+      default: () => 'doctor'
+    },
+    gender: {
+      type: String,
+      default: () => 'M'
     }
   },
   methods: {
     click () {
-      console.log('click')
       this.$emit('click', this.value)
     }
   }

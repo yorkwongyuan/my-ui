@@ -4279,166 +4279,65 @@ input[type="reset"] {
   margin-left: 100px;
 }
 
-.mwp-member-card {
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  padding: 14px;
-  padding-bottom: 0px;
-  padding-right: 0;
-  cursor: pointer;
-}
-
-.mwp-member-card--speciality {
-  font-size: 12px;
-  line-height: 17px;
-  color: #888888;
-  word-break: break-all;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /*! autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: on */
-  -webkit-line-clamp: 2;
-}
-
-.mwp-member-card--content {
-  padding: 6px 0;
-  background-color: white;
-  border-radius: 6px;
-}
-
-.mwp-member-card__left {
-  margin-right: 15px;
-}
-
-.mwp-member-card__photo-wrap {
-  position: relative;
-}
-
-.mwp-member-card__right {
-  flex: 1;
-  padding-bottom: 14px;
-  padding-right: 16px;
-  position: relative;
-  overflow: hidden;
-}
-
-.mwp-member-card__right:after {
-  position: absolute;
-  content: '';
-  height: 1px;
-  border-bottom: 1px solid #e6e6e6;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: scaleY(0.5);
-}
-
-.mwp-member-card__right--top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.mwp-member-card__right--top .left-part {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.mwp-member-card__right--title {
+.mwp-status-card {
   display: inline-block;
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 20px;
-  font-size: 14px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: #222222;
-  line-height: 20px;
-}
-
-.mwp-member-card__right--middle {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.mwp-member-card__right--hospital {
   width: fit-content;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 10px;
-  word-break: keep-all;
+  height: 24px;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 24px;
   white-space: nowrap;
 }
 
-.mwp-member-card__right--org {
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.mwp-status-card__block.is-RECEIVED {
+  color: #2F54EB;
 }
 
-.mwp-member-card__photo {
-  width: 42px;
-  height: 42px;
-  border-radius: 21px;
-  border: 1px solid #e5e5e5;
-  object-fit: cover;
+.mwp-status-card__block.is-TO_BE_CONFIRMED {
+  color: #2F54EB;
 }
 
-.mwp-member-card--verify {
-  width: 15px;
-  height: 15px;
+.mwp-status-card__block.is-CONSULTATIONING {
+  color: #2F54EB;
 }
 
-.mwp-member-card__tag {
-  border-radius: 2px;
-  padding: 0 4px;
-  display: inline-block;
-  background-color: #ff632f;
-  height: 16px;
-  line-height: 16px;
-  color: white;
-  font-size: 11px;
+.mwp-status-card__block.is-UNRECEIVED {
+  color: #2F54EB;
 }
 
-.mwp-member-card--icon {
-  display: inline-block;
-  width: 30px;
-  height: 16px;
-  background: #ff632f;
-  border-radius: 2px;
-  color: white;
-  padding: 2px 4px;
+.mwp-status-card__block.is-HADFINISH {
+  color: #1EC281;
 }
 
-.mwp-member-card .gray-font, .mwp-member-card .mwp-member-card__right--hospital, .mwp-member-card .mwp-member-card__right--org {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 20px;
-  font-size: 14px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: #555555;
-  line-height: 20px;
+.mwp-status-card__block.is-CANCEL {
+  color: #BBBBBB;
 }
 
-.mwp-member-card--num {
-  display: inline-block;
-  height: 17px;
-  font-size: 12px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
+.mwp-status-card__block.is-APPLIED {
+  color: #2F54EB;
+}
+
+.mwp-status-card__block.is-TREATMENTED {
+  color: #1EC281;
+}
+
+.mwp-status-card__block.is-BREAKPROMISE {
   color: #888888;
-  line-height: 17px;
+}
+
+.mwp-status-card__block.is-HADREPORT {
+  color: #1EC281;
+}
+
+.mwp-status-card__block.is-REVOKE {
+  color: #888888;
+}
+
+.mwp-status-card__block.is-NOTACCEPTED {
+  color: #888888;
+}
+
+.mwp-status-card__block.is-DISMISSED {
+  color: #888888;
 }

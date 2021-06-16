@@ -3,12 +3,16 @@ import Notice from './packages/notice'
 import Photo from './packages/photo'
 import MemberCard from './packages/member-card'
 import Icon from './packages/icon'
+import PatientCard from './packages/patient-card'
+import StatusCard from './packages/status-card'
 import mixin from './mixins/emitter'
 const components = {
   Button,
   Icon,
   Photo,
-  MemberCard
+  MemberCard,
+  PatientCard,
+  StatusCard
 }
 
 const install = function (Vue) {

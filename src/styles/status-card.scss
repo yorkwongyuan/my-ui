@@ -1,0 +1,52 @@
+@import "mixins/mixin.scss";
+@include b(status-card) {
+  display: inline-block;
+  width: fit-content;
+  height: 24px;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+  @include e(block) {
+    @include when(RECEIVED) {
+      color: $--color-status-blue;
+    }
+    @include when(TO_BE_CONFIRMED) {
+      color: $--color-status-blue;
+    }
+    @include when(CONSULTATIONING) {
+      color: $--color-status-blue;
+    }
+    @include when(UNRECEIVED) {
+      color: $--color-status-blue;
+    }
+    @include when(HADFINISH) {
+      color: $--color-status-green;
+    }
+    @include when(CANCEL) {
+      color: $--color-status-gray;
+    }
+    @include when(APPLIED) {
+      color: $--color-status-blue;
+    }
+    @include when(TREATMENTED) {
+      color: $--color-status-green;
+    }
+    @include when(BREAKPROMISE) {
+      color: $--color-status-heavy-gray;
+    }
+    @include when(HADREPORT) {
+      color: $--color-status-green;
+    }
+    @include when(REVOKE) {
+      color: $--color-status-heavy-gray;
+    }
+    @include when(NOTACCEPTED) {
+      color: $--color-status-heavy-gray;
+    }
+    @include when(DISMISSED) {
+      color: $--color-gray;
+    }
+  }
+}

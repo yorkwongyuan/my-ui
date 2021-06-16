@@ -1,0 +1,74 @@
+@import "mixins/mixin.scss";
+@include b(patient-card) {
+  @include e(ul) {
+    margin-top: 4px;
+    padding-left:0;
+    font-size: 13px;
+  }
+  @include m(name) {
+    max-width: 6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: 25px;
+    margin-right: 5px;
+  }
+  @include e(gray-font) {
+    height: 20px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #888888;
+    line-height: 20px;
+  }
+  @include e(li) {
+    margin-bottom: 2px;
+    .doctor-card-value{
+      height: 20px;
+      font-size: 13px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: $--color-text;
+      line-height: 20px;
+    }
+  }
+  @include e(gender) {
+    color: $--color-gray;
+    font-size: 12px;
+  }
+  @include e(status) {
+    width: 48px;
+    height: 24px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    line-height: 24px;
+    @include when(RECEIVED) {
+      color: $--color-status-blue;
+    }
+    @include when(TO_BE_CONFIRMED) {
+      color: $--color-status-blue;
+    }
+    @include when(CONSULTATIONING) {
+      color: $--color-status-blue;
+    }
+    @include when(UNRECEIVED) {
+      color: $--color-status-blue;
+    }
+    @include when(HADFINISH) {
+      color: $--color-status-green;
+    }
+    @include when(CANCEL) {
+      color: $--color-status-gray;
+    }
+    @include when(APPLIED) {
+      color: $--color-status-blue;
+    }
+  }
+}
