@@ -43,7 +43,7 @@ const REFERRAL = {
   TREATMENTED: '已就诊'
 }
 export default {
-  name: 'status-card',
+  name: 'mwp-status-card',
   data() {
     return {
       APPOINT,

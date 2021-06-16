@@ -1,5 +1,5 @@
 <template>
-   <member-card :value="info" class="mwp-patient-card" @click="click" type="patient" :gender="info.patGender">
+   <mwp-member-card :value="info" class="mwp-patient-card" @click="click" type="patient" :gender="info.patGender">
     <template v-slot:topLeft="{value}">
       <span class="mwp-patient-card__name mr-4">{{value.patName}}</span>
       <span class="mwp-patient-card__gender mr-4">{{value.patGender === 'M' ? '男' : '女'}}</span>
@@ -82,10 +82,10 @@
         </li>
       </ul>
     </template>
-  </member-card>
+  </mwp-member-card>
 </template>
 <script>
-
+import mwpMemberCard from '../member-card/index'
 // 业务类型
 const BIZTYPE = {
   APPOINTMENT: 'APPOINTMENT',
@@ -145,6 +145,9 @@ export default {
         return '-'
       }
     }
+  },
+  components: {
+    mwpMemberCard
   },
   computed: {
     referralType () {

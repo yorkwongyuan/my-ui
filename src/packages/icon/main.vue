@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'Icon',
+  name: 'mwp-icon',
   mounted () {
     this.dispatch('Button', 'test', 'hehe')
   }

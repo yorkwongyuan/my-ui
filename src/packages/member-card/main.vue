@@ -4,7 +4,7 @@
     @click="click"
   >
     <div class="mwp-member-card__left">
-      <Photo :type="type" :gender="gender"/>
+      <mwp-photo :type="type" :gender="gender"/>
     </div>
     <div class="mwp-member-card__right">
       <div class="mwp-member-card__right--top">
@@ -22,8 +22,12 @@
   </div>
 </template>
 <script>
+import mwpPhoto from '../photo/index'
 export default {
   name: 'mwp-member-card',
+  components: {
+    mwpPhoto
+  },
   props: {
     value: {
       type: Object,

@@ -20,16 +20,16 @@ export default {
 <template>
   <div class="button-demo">
     <div class="mb-16 button-demo__row">
-      <Button class="button-demo__btn" @click="test" type="primary">主色</Button>
-      <Button class="button-demo__btn" @click="test" type="sub">次要</Button>
-      <Button class="button-demo__btn" @click="test" type="danger">成功</Button>
-      <Button class="button-demo__btn" @click="test" type="normal">普通</Button>
-      <Button class="button-demo__btn" @click="test" type="link">链接</Button>
+      <mwp-button class="button-demo__btn" @click="test" type="primary">主色</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" type="sub">次要</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" type="danger">成功</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" type="normal">普通</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" type="link">链接</mwp-button>
     </div>
     <div class="button-demo__row">
-      <Button class="button-demo__btn" @click="test" size="large">large</Button>
-      <Button class="button-demo__btn" @click="test" size="medium" type="normal">medium</Button>
-      <Button class="button-demo__btn" @click="test" size="small" type="link">small</Button>
+      <mwp-button class="button-demo__btn" @click="test" size="large">large</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" size="medium" type="normal">medium</mwp-button>
+      <mwp-button class="button-demo__btn" @click="test" size="small" type="link">small</mwp-button>
     </div>
   </div>
 </template>
@@ -58,16 +58,16 @@ export default {
 <template>
 <div>
   <!-- type部分 -->
-  <Button class="button-demo__btn" type="primary" >主色</Button>
-  <Button class="button-demo__btn" type="sub">次要</Button>
-  <Button class="button-demo__btn" type="danger">成功</Button>
-  <Button class="button-demo__btn" type="info">提示</Button>
-  <Button class="button-demo__btn" type="normal">普通</Button>
-  <Button class="button-demo__btn" type="link">链接</Button>
+  <mwp-button class="button-demo__btn" type="primary" >主色</mwp-button>
+  <mwp-button class="button-demo__btn" type="sub">次要</mwp-button>
+  <mwp-button class="button-demo__btn" type="danger">成功</mwp-button>
+  <mwp-button class="button-demo__btn" type="info">提示</mwp-button>
+  <mwp-button class="button-demo__btn" type="normal">普通</mwp-button>
+  <mwp-button class="button-demo__btn" type="link">链接</mwp-button>
   <!-- 尺寸部分 -->
-  <Button class="button-demo__btn" size="large">large</Button>
-  <Button class="button-demo__btn" size="medium" type="normal">medium</Button>
-  <Button class="button-demo__btn" size="small" type="link">small</Button>
+  <mwp-button class="button-demo__btn" size="large">large</mwp-button>
+  <mwp-button class="button-demo__btn" size="medium" type="normal">medium</mwp-button>
+  <mwp-button class="button-demo__btn" size="small" type="link">small</mwp-button>
 </div>
 </template>
 <script>

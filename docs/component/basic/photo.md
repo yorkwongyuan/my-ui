@@ -27,19 +27,19 @@ export default {
   <div class="photo-demos">
     <div class="photo-demos__block">
       <div class="photo-demo"> 
-      <Photo gender="T" type="patient"/>
+      <mwp-photo gender="T" type="patient"/>
       <div class="photo-text">
         患者头像-性别不详
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="M" type="patient"/>
+      <mwp-photo gender="M" type="patient"/>
       <div class="photo-text">
         患者头像-男
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="F" type="patient"/>
+      <mwp-photo gender="F" type="patient"/>
       <div class="photo-text">
           患者头像-女
       </div>
@@ -54,19 +54,19 @@ export default {
   <div class="photo-demos">
     <div class="photo-demos__block">
       <div class="photo-demo"> 
-      <Photo gender="T" type="doctor"/>
+      <mwp-photo gender="T" type="doctor"/>
       <div class="photo-text">
         医生头像-性别不详
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="M"  type="doctor"/>
+      <mwp-photo gender="M"  type="doctor"/>
       <div class="photo-text">
         医生头像-男
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="F"  type="doctor"/>
+      <mwp-photo gender="F"  type="doctor"/>
       <div class="photo-text">
         医生头像-女
       </div>
@@ -107,39 +107,39 @@ export default {
 <template>
   <div>
     <div class="photo-demo"> 
-      <Photo gender="T" type="doctor"/>
+      <mwp-photo gender="T" type="doctor"/>
       <div class="photo-text">
       医生头像-性别不详
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="M"  type="doctor"/>
+      <mwp-photo gender="M"  type="doctor"/>
       <div class="photo-text">
         医生头像-男
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="F"  type="doctor"/>
+      <mwp-photo gender="F"  type="doctor"/>
       <div class="photo-text">
         医生头像-女
       </div>
     </div>
 
     <div class="photo-demo"> 
-      <Photo gender="T" type="patient"/>
+      <mwp-photo gender="T" type="patient"/>
       <div class="photo-text">
         患者头像-性别不详
       </div>
     </div>
 
     <div class="photo-demo"> 
-      <Photo gender="M" type="patient"/>
+      <mwp-photo gender="M" type="patient"/>
       <div class="photo-text">
         患者头像-男
       </div>
     </div>
     <div class="photo-demo"> 
-      <Photo gender="F" type="patient"/>
+      <mwp-photo gender="F" type="patient"/>
       <div class="photo-text">
         患者头像-女
       </div>

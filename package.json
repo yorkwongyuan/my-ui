@@ -1,6 +1,6 @@
 {
   "name": "mwp-ui",
-  "version": "1.0.18",
+  "version": "1.0.22",
   "description": "",
   "main": "lib/mwp-ui.min.js",
   "directories": {

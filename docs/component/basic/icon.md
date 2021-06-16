@@ -16,7 +16,7 @@ export default {
 </script>
 <template>
   <div>
-    <Icon/>
+    <mwp-icon/>
   </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
 </script>
 <template>
   <div>
-    <w-icon/>
+    <mwp-icon/>
   </div>
 </template>
 ```

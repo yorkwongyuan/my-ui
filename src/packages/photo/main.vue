@@ -19,7 +19,7 @@
 <script>
 import { oneOf } from '../../utils/assist'
 export default {
-  name: 'photo',
+  name: 'mwp-photo',
   props: {
     type:{
       type: String,

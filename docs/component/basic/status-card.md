@@ -9,17 +9,17 @@ title: Status-card
 #### 会诊
 <template>
   <div class="status-demo">
-    <status-card bizType="CONSULTATION" status="RECEIVED"/>
-    <status-card bizType="CONSULTATION" status="TO_BE_CONFIRMED"/>
-    <status-card bizType="CONSULTATION" status="RECEIVED"/>
-    <status-card bizType="CONSULTATION" status="NOTACCEPTED"/>
-    <status-card bizType="CONSULTATION" status="CONSULTATIONING"/>
-    <status-card bizType="CONSULTATION" status="HADFINISH"/>
-    <status-card bizType="CONSULTATION" status="CANCEL"/>
-    <status-card bizType="CONSULTATION" status="APPLIED"/>
-    <status-card bizType="CONSULTATION" status="UNRECEIVED"/>
-    <status-card bizType="CONSULTATION" status="DISMISSED"/>
-    <status-card bizType="CONSULTATION" status="REVOKE"/>
+    <mwp-status-card bizType="CONSULTATION" status="RECEIVED"/>
+    <mwp-status-card bizType="CONSULTATION" status="TO_BE_CONFIRMED"/>
+    <mwp-status-card bizType="CONSULTATION" status="RECEIVED"/>
+    <mwp-status-card bizType="CONSULTATION" status="NOTACCEPTED"/>
+    <mwp-status-card bizType="CONSULTATION" status="CONSULTATIONING"/>
+    <mwp-status-card bizType="CONSULTATION" status="HADFINISH"/>
+    <mwp-status-card bizType="CONSULTATION" status="CANCEL"/>
+    <mwp-status-card bizType="CONSULTATION" status="APPLIED"/>
+    <mwp-status-card bizType="CONSULTATION" status="UNRECEIVED"/>
+    <mwp-status-card bizType="CONSULTATION" status="DISMISSED"/>
+    <mwp-status-card bizType="CONSULTATION" status="REVOKE"/>
   </div>
 </template>
 
@@ -28,17 +28,17 @@ title: Status-card
 ```vue
 <template>
 <div>
- <status-card bizType="CONSULTATION" status="RECEIVED"/>
-  <status-card bizType="CONSULTATION" status="TO_BE_CONFIRMED"/>
-  <status-card bizType="CONSULTATION" status="RECEIVED"/>
-  <status-card bizType="CONSULTATION" status="NOTACCEPTED"/>
-  <status-card bizType="CONSULTATION" status="CONSULTATIONING"/>
-  <status-card bizType="CONSULTATION" status="HADFINISH"/>
-  <status-card bizType="CONSULTATION" status="CANCEL"/>
-  <status-card bizType="CONSULTATION" status="APPLIED"/>
-  <status-card bizType="CONSULTATION" status="UNRECEIVED"/>
-  <status-card bizType="CONSULTATION" status="DISMISSED"/>
-  <status-card bizType="CONSULTATION" status="REVOKE"/>
+ <mwp-status-card bizType="CONSULTATION" status="RECEIVED"/>
+  <mwp-status-card bizType="CONSULTATION" status="TO_BE_CONFIRMED"/>
+  <mwp-status-card bizType="CONSULTATION" status="RECEIVED"/>
+  <mwp-status-card bizType="CONSULTATION" status="NOTACCEPTED"/>
+  <mwp-status-card bizType="CONSULTATION" status="CONSULTATIONING"/>
+  <mwp-status-card bizType="CONSULTATION" status="HADFINISH"/>
+  <mwp-status-card bizType="CONSULTATION" status="CANCEL"/>
+  <mwp-status-card bizType="CONSULTATION" status="APPLIED"/>
+  <mwp-status-card bizType="CONSULTATION" status="UNRECEIVED"/>
+  <mwp-status-card bizType="CONSULTATION" status="DISMISSED"/>
+  <mwp-status-card bizType="CONSULTATION" status="REVOKE"/>
 </div>
 </template>
 ```
@@ -47,14 +47,14 @@ title: Status-card
 #### 预约
 <template>
   <div class="status-demo">
-    <status-card bizType="APPOINT" status="UNRECEIVED"/>
-    <status-card bizType="APPOINT" status="RECEIVED"/>
-    <status-card bizType="APPOINT" status="NOTACCEPTED"/>
-    <status-card bizType="APPOINT" status="REVOKE"/>
-    <status-card bizType="APPOINT" status="HADREPORT"/>
-    <status-card bizType="APPOINT" status="CANCEL"/>
-    <status-card bizType="APPOINT" status="BREAKPROMISE"/>
-    <status-card bizType="APPOINT" status="TREATMENTED"/>
+    <mwp-status-card bizType="APPOINT" status="UNRECEIVED"/>
+    <mwp-status-card bizType="APPOINT" status="RECEIVED"/>
+    <mwp-status-card bizType="APPOINT" status="NOTACCEPTED"/>
+    <mwp-status-card bizType="APPOINT" status="REVOKE"/>
+    <mwp-status-card bizType="APPOINT" status="HADREPORT"/>
+    <mwp-status-card bizType="APPOINT" status="CANCEL"/>
+    <mwp-status-card bizType="APPOINT" status="BREAKPROMISE"/>
+    <mwp-status-card bizType="APPOINT" status="TREATMENTED"/>
   </div>
 </template>
 
@@ -63,14 +63,14 @@ title: Status-card
 ```vue
 <template>
 <div>
-  <status-card bizType="APPOINT" status="UNRECEIVED"/>
-  <status-card bizType="APPOINT" status="RECEIVED"/>
-  <status-card bizType="APPOINT" status="NOTACCEPTED"/>
-  <status-card bizType="APPOINT" status="REVOKE"/>
-  <status-card bizType="APPOINT" status="HADREPORT"/>
-  <status-card bizType="APPOINT" status="CANCEL"/>
-  <status-card bizType="APPOINT" status="BREAKPROMISE"/>
-  <status-card bizType="APPOINT" status="TREATMENTED"/>
+  <mwp-status-card bizType="APPOINT" status="UNRECEIVED"/>
+  <mwp-status-card bizType="APPOINT" status="RECEIVED"/>
+  <mwp-status-card bizType="APPOINT" status="NOTACCEPTED"/>
+  <mwp-status-card bizType="APPOINT" status="REVOKE"/>
+  <mwp-status-card bizType="APPOINT" status="HADREPORT"/>
+  <mwp-status-card bizType="APPOINT" status="CANCEL"/>
+  <mwp-status-card bizType="APPOINT" status="BREAKPROMISE"/>
+  <mwp-status-card bizType="APPOINT" status="TREATMENTED"/>
 </div>
 </template>
 ```
@@ -79,14 +79,14 @@ title: Status-card
 #### 转诊
 <template>
   <div class="status-demo">
-    <status-card bizType="REFERRAL" status="UNRECEIVED"/>
-    <status-card bizType="REFERRAL" status="RECEIVED"/>
-    <status-card bizType="REFERRAL" status="NOTACCEPTED"/>
-    <status-card bizType="REFERRAL" status="REVOKE"/>
-    <status-card bizType="REFERRAL" status="HADREPORT"/>
-    <status-card bizType="REFERRAL" status="CANCEL"/>
-    <status-card bizType="REFERRAL" status="BREAKPROMISE"/>
-    <status-card bizType="REFERRAL" status="TREATMENTED"/>
+    <mwp-status-card bizType="REFERRAL" status="UNRECEIVED"/>
+    <mwp-status-card bizType="REFERRAL" status="RECEIVED"/>
+    <mwp-status-card bizType="REFERRAL" status="NOTACCEPTED"/>
+    <mwp-status-card bizType="REFERRAL" status="REVOKE"/>
+    <mwp-status-card bizType="REFERRAL" status="HADREPORT"/>
+    <mwp-status-card bizType="REFERRAL" status="CANCEL"/>
+    <mwp-status-card bizType="REFERRAL" status="BREAKPROMISE"/>
+    <mwp-status-card bizType="REFERRAL" status="TREATMENTED"/>
   </div>
 </template>
 
@@ -95,14 +95,14 @@ title: Status-card
 ```vue
 <template>
 <div>
-  <status-card bizType="REFERRAL" status="UNRECEIVED"/>
-  <status-card bizType="REFERRAL" status="RECEIVED"/>
-  <status-card bizType="REFERRAL" status="NOTACCEPTED"/>
-  <status-card bizType="REFERRAL" status="REVOKE"/>
-  <status-card bizType="REFERRAL" status="HADREPORT"/>
-  <status-card bizType="REFERRAL" status="CANCEL"/>
-  <status-card bizType="REFERRAL" status="BREAKPROMISE"/>
-  <status-card bizType="REFERRAL" status="TREATMENTED"/>
+  <mwp-status-card bizType="REFERRAL" status="UNRECEIVED"/>
+  <mwp-status-card bizType="REFERRAL" status="RECEIVED"/>
+  <mwp-status-card bizType="REFERRAL" status="NOTACCEPTED"/>
+  <mwp-status-card bizType="REFERRAL" status="REVOKE"/>
+  <mwp-status-card bizType="REFERRAL" status="HADREPORT"/>
+  <mwp-status-card bizType="REFERRAL" status="CANCEL"/>
+  <mwp-status-card bizType="REFERRAL" status="BREAKPROMISE"/>
+  <mwp-status-card bizType="REFERRAL" status="TREATMENTED"/>
 </div>
 </template>
 ```

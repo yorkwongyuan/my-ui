@@ -17,7 +17,7 @@ export default {
 </script>
 <template>
   <div class="member-card-demos">
-    <member-card @click="handleClick">
+    <mwp-member-card @click="handleClick">
       <!-- 左上方 -->
       <template v-slot:topLeft="{value}">
         <div class="mwp-member-card-demos__top">
@@ -47,7 +47,7 @@ export default {
           </li>
         </ul>
       </template>
-    </member-card>
+    </mwp-member-card>
   </div>
 </template>
 
@@ -66,7 +66,7 @@ export default {
 ```vue {5-32}
 <template>
   <div class="member-card-demos">
-    <member-card @click="handleClick">
+    <mwp-member-card @click="handleClick">
       <!-- 左上方 -->
       <template v-slot:topLeft="{value}">
         <div class="mwp-member-card-demos__top">
@@ -96,7 +96,7 @@ export default {
           </li>
         </ul>
       </template>
-    </member-card>
+    </mwp-member-card>
   </div>
 </template>
 <script>

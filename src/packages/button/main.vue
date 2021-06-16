@@ -6,7 +6,7 @@
 <script>
 import { oneOf } from '../../utils/assist'
 export default {
-  name: 'Button',
+  name: 'mwp-button',
   props: {
     type: {
       // validator (value) {

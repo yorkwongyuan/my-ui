@@ -113,7 +113,7 @@ export default {
 
 <template>
   <div class="patient-demo">
-    <patient-card :info="consultationInfo" @click="handleClick" type="CONSULTATION"/>
+    <mwp-patient-card :info="consultationInfo" @click="handleClick" type="CONSULTATION"/>
   </div>
 </template>
 
@@ -123,7 +123,7 @@ export default {
 ```vue
 <template>
   <div>
-    <patient-card :info="consultationInfo" @click="handleClick" type="CONSULTATION"/>
+    <mwp-patient-card :info="consultationInfo" @click="handleClick" type="CONSULTATION"/>
   </div>
 </template>
 
@@ -175,7 +175,7 @@ export default {
 
 <template>
   <div class="patient-demo">
-    <patient-card :info="appointInfo" @click="handleClick" type="APPOINTMENT"/>
+    <mwp-patient-card :info="appointInfo" @click="handleClick" type="APPOINTMENT"/>
   </div>
 </template>
 
@@ -185,7 +185,7 @@ export default {
 ```vue
 <template>
   <div>
-    <patient-card :info="appointInfo" @click="handleClick" type="CONSULTATION"/>
+    <mwp-patient-card :info="appointInfo" @click="handleClick" type="CONSULTATION"/>
   </div>
 </template>
 
@@ -219,7 +219,7 @@ export default {
 
 <template>
   <div class="patient-demo">
-    <patient-card :info="referrelInfo" @click="handleClick" type="REFERRAL"/>
+    <mwp-patient-card :info="referrelInfo" @click="handleClick" type="REFERRAL"/>
   </div>
 </template>
 
@@ -229,7 +229,7 @@ export default {
 ```vue
 <template>
   <div>
-    <patient-card :info="appointInfo" @click="handleClick" type="CONSULTATION"/>
+    <mwp-patient-card :info="appointInfo" @click="handleClick" type="CONSULTATION"/>
   </div>
 </template>
 

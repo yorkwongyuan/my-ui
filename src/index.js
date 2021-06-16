@@ -17,7 +17,7 @@ const components = {
 
 const install = function (Vue) {
   Object.keys(components).forEach(key => {
-    Vue.component(key, components[key])
+    Vue.component(components[key].name, components[key])
   })
   Vue.mixin(mixin)
   Vue.prototype.$notice = Notice
