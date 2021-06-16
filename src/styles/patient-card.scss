@@ -1,4 +1,5 @@
 @import "mixins/mixin.scss";
+@import "member-card.scss";
 @include b(patient-card) {
   @include e(ul) {
     margin-top: 4px;
