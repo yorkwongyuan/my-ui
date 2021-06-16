@@ -2,6 +2,6 @@
   "button": "packages/button/index.js",
   "photo": "packages/photo/index.js",
   "member-card": "packages/member-card/index.js",
-  "patient-card": "packages/patient/index.js",
+  "patient-card": "packages/patient-card/index.js",
   "status-card": "packages/status-card/index.js"
 }

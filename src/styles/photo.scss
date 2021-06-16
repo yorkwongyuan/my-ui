@@ -1,8 +1,8 @@
 @import "mixins/mixin.scss";
 @include b(photo) {
   display: inline-block;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   @include e(photo-wrap) {
     position: relative;
   }

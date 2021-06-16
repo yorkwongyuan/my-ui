@@ -1,7 +1,7 @@
-import myUi from '../../src/index'
+import mwpUi from '../../src/index'
 import "../../src/styles/index.scss"
 import "./assets/css/index.scss"
 
 export default ({Vue, options}) => {
-  Vue.use(myUi)
+  Vue.use(mwpUi)
 }

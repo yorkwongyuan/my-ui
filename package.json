@@ -1,6 +1,6 @@
 {
   "name": "mwp-ui",
-  "version": "1.0.15",
+  "version": "1.0.18",
   "description": "",
   "main": "lib/mwp-ui.min.js",
   "directories": {
@@ -20,7 +20,7 @@
     "start": "npm run docs:dev",
     "build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist",
-    "deploy:build": "npm run docs:build && npm run deploy"
+    "deploy:build": "npm run build && npm run deploy"
   },
   "keywords": [],
   "author": "wy <631824375@qq.com>",

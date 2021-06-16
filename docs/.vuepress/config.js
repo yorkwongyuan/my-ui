@@ -1,5 +1,6 @@
 module.exports = {
   title: 'mwp-ui样式库',
+  base: '/mwp-ui/',
   description: '基于vue.js2.x 开发的组件库',
   port: 8083,
   sidebarDepth: 2,
