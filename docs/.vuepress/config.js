@@ -7,9 +7,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '主题', link: '/theme/' },
-      { text: '组件', link: '/component/basic' },
-      { text: 'External', link: 'https://google.com' },
+      { text: '组件', link: '/component/basic' }
     ],
     sidebar: [
       {

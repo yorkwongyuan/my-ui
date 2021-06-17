@@ -1,5 +1,5 @@
 ---
-title: Patient-card
+title: PatientCard
 ---
 # 患者卡片
 

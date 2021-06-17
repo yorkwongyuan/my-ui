@@ -1,5 +1,5 @@
 ---
-title: Member-card
+title: MemberCard
 ---
 # 医生/患者信息卡片骨架组件
 

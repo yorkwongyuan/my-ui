@@ -33,6 +33,9 @@
     @include when(TREATMENTED) {
       color: $--color-status-green;
     }
+    @include when(RESERVED) {
+      color: $--color-status-green;
+    }
     @include when(BREAKPROMISE) {
       color: $--color-status-heavy-gray;
     }

@@ -31,30 +31,21 @@ npm i babel-plugin-component -D
 
 然后需要在`.babelrc`文件中加入配置
 
-```.txt
- "plugins": [
-    "transform-vue-jsx",
-    "transform-runtime",
-    [
-      "import",
-      {
-        "libraryName": "vant",
-        "libraryDirectory": "es",
-        "style": true
+```.js
+"plugins": [
+  ...
+  [
+    "component",
+    {
+      "libraryName": "mwp-ui",
+      "styleLibrary": {
+        "name": "styles",
+        "base": false
       }
-    ],
-    "transform-decorators-legacy",
-    [
-      "component",
-      {
-        "libraryName": "mwp-ui",
-        "styleLibrary": {
-          "name": "styles",
-          "base": false
-        }
-      }
-    ]
+    }
   ]
+  ...
+]
 ```
 
 此时的引入方式可以改为:

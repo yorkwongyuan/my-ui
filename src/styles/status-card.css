@@ -4322,6 +4322,10 @@ input[type="reset"] {
   color: #1EC281;
 }
 
+.mwp-status-card__block.is-RESERVED {
+  color: #1EC281;
+}
+
 .mwp-status-card__block.is-BREAKPROMISE {
   color: #888888;
 }

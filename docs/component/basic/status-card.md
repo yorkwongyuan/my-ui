@@ -1,5 +1,5 @@
 ---
-title: Status-card
+title: StatusCard
 ---
 # 业务状态组件
 
@@ -85,7 +85,7 @@ title: Status-card
     <mwp-status-card bizType="REFERRAL" status="REVOKE"/>
     <mwp-status-card bizType="REFERRAL" status="HADREPORT"/>
     <mwp-status-card bizType="REFERRAL" status="CANCEL"/>
-    <mwp-status-card bizType="REFERRAL" status="BREAKPROMISE"/>
+    <mwp-status-card bizType="REFERRAL" status="RESERVED"/>
     <mwp-status-card bizType="REFERRAL" status="TREATMENTED"/>
   </div>
 </template>
@@ -101,7 +101,7 @@ title: Status-card
   <mwp-status-card bizType="REFERRAL" status="REVOKE"/>
   <mwp-status-card bizType="REFERRAL" status="HADREPORT"/>
   <mwp-status-card bizType="REFERRAL" status="CANCEL"/>
-  <mwp-status-card bizType="REFERRAL" status="BREAKPROMISE"/>
+  <mwp-status-card bizType="REFERRAL" status="RESERVED"/>
   <mwp-status-card bizType="REFERRAL" status="TREATMENTED"/>
 </div>
 </template>

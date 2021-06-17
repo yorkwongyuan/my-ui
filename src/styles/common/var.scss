@@ -28,3 +28,46 @@ $--color-text: $-color-colorless--8;
 $--background-color: $-color-colorless--2;
 $--border-color:$-color-colorless--4;
 $--border-light-color:$-color-colorless--3;
+
+// 按钮部分
+// primary
+$--button-primary-background-color: $--color-primary;
+$--button-primary-background-color-hover: $-color-geekBlue--5;
+$--button-primary-background-color-active: $-color-geekBlue--7;
+
+// sub
+$--button-sub-background-color: $-color-colorless--1;
+$--button-sub-border-color: $--color-primary;
+$--button-sub-color: $--color-primary;
+$--button-sub-background-color-hover: $-color-geekBlue--1;
+$--button-sub-background-color-active: $-color-geekBlue--2;
+
+
+// danger
+$--button-danger-background-color: $-color-colorless--1;
+$--button-danger-border-color: $--color-danger;
+$--button-danger-color: $--color-danger;
+$--button-danger-background-color-hover: $-color-fightingRed--5;
+$--button-danger-background-color-active: $-color-fightingRed--6;
+$--button-danger-color-hover: $-color-colorless--1;
+$--button-danger-color-active: $-color-colorless--1;
+$--button-danger-border-hover: $-color-fightingRed--5;
+$--button-danger-border-active: $-color-fightingRed--5;
+
+// normal
+$--button-normal-background-color: $-color-colorless--1;
+$--button-normal-border-color: $-color-colorless--4;
+$--button-normal-color: $-color-colorless--8;
+
+$--button-normal-color-hover: $-color-geekBlue--5;
+$--button-normal-border-color-hover: $-color-geekBlue--5;
+
+$--button-normal-color-active: $-color-geekBlue--6;
+$--button-normal-border-color-active: $-color-geekBlue--6;
+
+// link
+$--button-link-background-color: $-color-colorless--1;
+$--button-link-color: $-color-geekBlue--6;
+$--button-link-border-color-hover: $-color-geekBlue--5;
+$--button-link-color-hover: $-color-geekBlue--5;
+$--button-link-color-active: $-color-geekBlue--7;

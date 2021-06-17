@@ -25,14 +25,14 @@ export default {
       type: String,
       default: () => 'doctor',
       validator (value) {
-        return oneOf(value, ['doctor', 'patient', 'volunteer'])
+        return oneOf(value, ['doctor', 'patient', 'volunteer', ''])
       },
     },
     gender: {
       type: String,
       default: () => '',
       validator (value) {
-        return oneOf(value, ['M', 'F', 'T'])
+        return oneOf(value, ['M', 'F', 'T', ''])
       },
     },
     src: {

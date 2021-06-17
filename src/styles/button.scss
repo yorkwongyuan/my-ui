@@ -5,30 +5,70 @@
   cursor: pointer;
   border-radius: 4px;
   @include m(primary) {
-    background-color: $--color-primary;
-    border:1px solid $--color-primary;
+    background-color: $--button-primary-background-color;
+    border:1px solid $--button-primary-background-color;
     color: $--color-white;
+    &:hover {
+      background-color: $--button-primary-background-color-hover;
+      border-color: $--button-primary-background-color-hover;
+    }
+    &:active {
+      background-color: $--button-primary-background-color-active;
+      border-color: $--button-primary-background-color-active;
+    }
   }
   @include m(sub) {
-    background-color: $--color-white;
-    color: $--color-primary;
-    border:1px solid $--color-primary;
+    background-color: $--button-sub-background-color;
+    color: $--button-sub-color;
+    border:1px solid $--button-sub-border-color;
+    &:hover {
+      background-color: $--button-sub-background-color-hover;
+    }
+    &:active {
+      background-color: $--button-sub-background-color-active;
+    }
   }
   @include m(danger) {
-    background-color: $--color-white;
-    color: $--color-danger;
-    border:1px solid $--color-danger;
+    background-color: $--button-danger-background-color;
+    color: $--button-danger-color;
+    border:1px solid $--button-danger-border-color;
+    &:hover {
+      color: $--button-danger-color-hover;
+      border-color: $--button-danger-border-hover;
+      background-color: $--button-danger-background-color-hover;
+    }
+    &:active {
+      color: $--button-danger-color-active;
+      border-color: $--button-danger-border-active;
+      background-color: $--button-danger-background-color-active;
+    }
   }
   @include m(normal) {
-    background-color: $--color-white;
-    color: $--color-text;
-    border:1px solid $--color-gray-1;
+    background-color: $--button-normal-background-color;
+    color: $--button-normal-color;
+    border:1px solid $--button-normal-border-color;
+    &:hover {
+      color: $--button-normal-color-hover;
+      border-color: $--button-normal-border-color-hover;
+    }
+    &:active {
+      color: $--button-normal-color-active;
+      border-color: $--button-normal-border-color-active;
+    }
   }
   @include m(link) {
-    background-color: $--color-white;
-    color: $--color-primary;
-    border: none;
+    background-color: $--button-link-background-color;
+    color: $--button-link-color;
     font-size: 14px;
+    &:hover {
+      color: $--button-link-color-hover;
+      // border-bottom: 1px solid $--button-link-border-color-hover;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $--button-link-color-active;
+      text-decoration: none;
+    }
   }
 
   @include m(medium) {
